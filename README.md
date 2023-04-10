@@ -1,5 +1,5 @@
 # GeotaraAutomationTest
-Working Folder for project automation test geotara project
+Working Folder for project automation test geotara project 
 
 # Aturan penambahan script test
 1. Penambahan feature file
