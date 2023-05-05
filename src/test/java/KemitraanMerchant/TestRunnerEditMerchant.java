@@ -1,4 +1,4 @@
-package Merchant;
+package KemitraanMerchant;
 
 public class TestRunnerEditMerchant {
 

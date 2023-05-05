@@ -1,4 +1,4 @@
-package Akomodasi;
+package KemitraanAkomodasi;
 
 public class TestRunnerEditAkomodasi {
 
