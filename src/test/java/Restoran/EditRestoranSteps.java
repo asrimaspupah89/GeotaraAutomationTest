@@ -14,13 +14,13 @@ import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.And;
 
-public class MenampilkanRestoranSteps {
+public class EditRestoranSteps {
 WebDriver driver = null;
 	
 //	Given User restoran has opened the browser
 	@Given("User restoran has opened the browser")
 	public void User_restoran_has_opened_the_browser() {
-		System.setProperty("webdriver.chrome.driver", "/college stuff/smt 6/Pengujian Perangkat Lunak/tugas/praktek/W11/CucumberJava/src/test/resources/drivers/chromedriver.exe\"");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
 	    ChromeOptions options = new ChromeOptions();
 	    options.addArguments("--remote-allow-origins=*");
 	    
