@@ -9,7 +9,7 @@ import io.cucumber.junit.Cucumber;
 monochrome =true,
 plugin = {"pretty", "html:target/HtmlReports/Report.html",
 		"json:target/JSONReports/report.json",
-		"junit:raget/JunitReports/report.xml"},
+		"junit:target/JunitReports/report.xml"},
 tags = "@HapusTourAndTravel" )
 
 public class TestRunnerHapusTourAndTravel {
