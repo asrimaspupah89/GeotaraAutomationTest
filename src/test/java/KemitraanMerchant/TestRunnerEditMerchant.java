@@ -9,12 +9,11 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="src/test/resources/Features", // path of feature file
 		glue={"KemitraanMerchant", "StepDefinitions"}, // path of step definition file
-		
 		monochrome = true,
-		plugin = {"pretty", "html:target/reports/cucumber.html", 
-			    "json:target/reports/cucumber.json",
-			    "junit:target/reports/cucumber.xml"},
-		tags = "@EditMerchantTest") 
+		plugin = {"pretty", "html:target/reports/editMerchant.html", 
+			    "json:target/reports/editMerchant.json",
+			    "junit:target/reports/editMerchant.xml"},
+		tags = "@EditMerchantTestScenario") 
 
 public class TestRunnerEditMerchant {
 

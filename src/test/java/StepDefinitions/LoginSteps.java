@@ -1,30 +1,20 @@
 package StepDefinitions;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.*;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import TheDriver.TheDriver;
 
 public class LoginSteps {
 	WebDriver driver = null;
 	
 	@Given("browser is open")
 	public void browser_is_open() {
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--remote-allow-origin=*");
-		
-		driver = new ChromeDriver(options);
-	
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-		
+		driver = TheDriver.getInstance();
 	}
 	
 	@Given("user is on login page")
