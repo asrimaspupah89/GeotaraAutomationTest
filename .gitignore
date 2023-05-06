@@ -1,1 +1,7 @@
 /target/
+.idea/
+.settings
+/bin/
+.project
+.classpath
+/src/test/resource/drives/chromedriver.exe
