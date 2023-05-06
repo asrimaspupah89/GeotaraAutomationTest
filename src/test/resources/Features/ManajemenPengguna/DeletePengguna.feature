@@ -1,10 +1,9 @@
 #Author: Caturiani Pratidina Bintari
 #Date : 5 April 2023
-#Feature: Add Pengguna
+#Feature: Delete Pengguna
 @DeletePengguna
 Feature: Delete User
 
-  #@AddPengguna1
   Scenario: delete user
     Given membuka broswe
     And user membuka web geotara
