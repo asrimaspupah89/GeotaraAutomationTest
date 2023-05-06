@@ -72,9 +72,9 @@ public class DeleteMerchant {
 	    String actualUrl = driver.getCurrentUrl();
 	}
 	
-	@When("User clicks on the delete button and deletes row 5")
-	public void user_clicks_on_delete_button_and_deletes_row_5() {
-	driver.findElement(By.xpath("//div[@id='row-5']//button[contains(@class,'btn-danger')]")).click();
+	@When("User klik tombol hapus dan menghapus baris 7")
+	public void user_klik_tombol_hapus_dan_menghapus_baris_7() {
+	driver.findElement(By.cssSelector("a.shadow.btn.btn-danger.btn-xs")).click();
 	}
 	
 	@And("User click on Ya Hapus button")
