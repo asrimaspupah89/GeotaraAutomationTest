@@ -1,8 +1,10 @@
 # Author : Hilma Sri Rahayu
 # Date : 06 Mei 2023
 # Description : Menghapus data tur dan travel
+@SmokeScenario
 Feature: Menghapus data tur dan travel
 
+	@HapusTourAndTravel
   Scenario: Menghapus data tur dan travel
     Given browser is launched
     And user opens geotara cms web
