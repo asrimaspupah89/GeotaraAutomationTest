@@ -19,7 +19,7 @@ Feature: AddUser
     And user add <confKataSandi> untuk konfir pass
     And user pilih <peran> untuk peran
     Then menampilkan notifikasi berhasil Add Pengguna
-Examples: 
-  | nama  | email            	| kataSandi | confKataSandi | peran   |
-  | crumy | ocaaa@yahoo.com 	| ocaaa 		| ocaaa      		| admin 	|
+	Examples: 
+	  | nama  				| email          		  	| kataSandi | confKataSandi | peran   |
+	  | caturbintari	| bintari@geotara.com 	| ocaaa 		| ocaaa      		| admin 	|
 

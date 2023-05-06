@@ -44,7 +44,7 @@ public class AddMerchant {
 	@When("user enters email and password")
 	public void user_enters_email_and_password() {
 
-		driver.findElement(By.id("email")).sendKeys("admin@geotara.com");
+		driver.findElement(By.id("email")).sendKeys("catur@geotara.com");
 		driver.findElement(By.id("password")).sendKeys("admin");
 	
 	}
@@ -115,24 +115,22 @@ public class AddMerchant {
 	
 	@And("User clicks on Distrik")
 	public void user_clicks_on_Distrik() {
-	    WebElement distrikInput = driver.findElement(By.id("react-select-4-input"));
-	    distrikInput.click();
-	    distrikInput.sendKeys("PANGANDARAN");
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'PANGANDARAN')]"))).click();
+		driver.findElement(By.id("react-select-4-input")).click();
+		driver.findElement(By.id("react-select-4-input")).sendKeys("PANGANDARAN");
+		driver.findElement(By.xpath("//div[text()='PANGANDARAN']")).click();
+		driver.findElement(By.id("react-select-5-input")).click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=' css-1wa3eu0-placeholder' and text()='PANGANDARAN']"))).click();
 	}
 	
 	@And("User clicks on Desa")
 	public void user_clicks_on_Desa() {
-	    WebElement desaInput = driver.findElement(By.id("react-select-5-input"));
-	    desaInput.click();
-	    desaInput.sendKeys("PANANJUNG");
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    WebElement option = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'PANANJUNG')]")));
-	    option.click();
-	    WebElement hiddenInput = driver.findElement(By.xpath("//input[@name='desa_id']"));
-	    hiddenInput.sendKeys(option.getAttribute("data-value"));
-	} 
+		driver.findElement(By.id("react-select-5-input")).sendKeys("PANANJUNG");
+		driver.findElement(By.xpath("//div[text()='PANANJUNG']")).click();
+		driver.findElement(By.id("root")).click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'PANANJUNG')]"))).click();
+		}
 	
 	@And("User clicks on Alamat")
 	public void user_clicks_on_Alamat() {
