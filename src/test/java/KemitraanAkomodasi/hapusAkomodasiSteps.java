@@ -52,9 +52,9 @@ public class hapusAkomodasiSteps {
 		driver.findElement(By.xpath("//a[@href='/accomodation']")).click();
 	}
 	
-	@And("User hapus akomodasi clicks on Hapus button")
-	public void User_hapus_akomodasi_clicks_on_Hapus_button() {
-		driver.findElement(By.cssSelector("i.fa.fa-trash")).click();;
+	@And("User hapus akomodasi clicks on Hapus {string} button")
+	public void User_hapus_akomodasi_clicks_on_Hapus_button(String row_data) {
+		driver.findElement(By.xpath("//div[@id='row-" + row_data + "']//i[@class='fa fa-trash']")).click();
 	}
 	
 	@And("User hapus akomodasi gets a data delete notification")
