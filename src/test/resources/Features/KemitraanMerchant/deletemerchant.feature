@@ -14,6 +14,6 @@ Feature: feature to test add merchant functionality
 	  When User click on the kemitraan button
 	  And User click on Merchant dan Souvernir button
 	  Then User is navigate to the merchant page
-	  When User clicks on the delete button and deletes row 5
+	  When User klik tombol hapus dan menghapus baris 7
 	  And User click on Ya Hapus button
 	  Then User is stay in the merchant page
