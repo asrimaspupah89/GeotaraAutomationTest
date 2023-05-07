@@ -5,12 +5,12 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/resources/Features/Event", glue= {"Event"}, 
+@CucumberOptions(features="src/test/resources/Features/", glue= {"Event", "TheDriver"},
 monochrome =true,
-plugin = {"pretty", "html:target/HtmlReports/ReportMenampilkanEvent.html",
-		"json:target/JSONReports/ReportMenampilkanEvent.json",
-		"junit:target/JunitReports/ReportMenampilkanEvent.xml"},
-tags = "@MenampilkanEvent" 
+plugin = {"pretty", "html:target/HtmlReports/ReportEditEvent.html",
+		"json:target/JSONReports/ReportEditEvent.json",
+		"junit:target/JunitReports/ReportEditEvent.xml"},
+tags = "@EditEventScenario"
 		)
 public class TestRunnerEvent{
 	
