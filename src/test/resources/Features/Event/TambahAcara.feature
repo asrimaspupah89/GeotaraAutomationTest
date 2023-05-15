@@ -3,7 +3,7 @@
 # Description Menambahkan acara baru
 
 @0.0
-Feature: feature to test add Acara and travel functionality
+Feature: feature to test add Acara functionality
 
   @0.0.1
   Scenario: Check add acara is successful with valid input
